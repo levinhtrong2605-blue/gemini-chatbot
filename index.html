@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cẩm Lan Sục AI - Trò Chuyện</title>
+    <title>Cẩm Lan Sục AI - Phiên Bản Lung Linh</title>
     <style>
+        /* Hiệu ứng nền chuyển động */
         body {
             margin: 0;
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -12,52 +13,129 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            overflow: hidden;
         }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         .container {
             text-align: center;
-            background: white;
-            padding: 2.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 3rem;
             border-radius: 30px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
             max-width: 450px;
             width: 90%;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            position: relative;
         }
+
+        /* Hiệu ứng vòng tròn xoay quanh ảnh */
+        .avatar-wrapper {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .avatar-wrapper::before {
+            content: '';
+            position: absolute;
+            top: -10px; left: -10px; right: -10px; bottom: -10px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+            background-size: 400%;
+            z-index: -1;
+            animation: steam 20s linear infinite;
+        }
+
+        @keyframes steam {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+
         .avatar {
-            width: 180px;
-            height: 180px;
+            width: 100%;
+            height: 100%;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #ff69b4; /* Đổi sang màu hồng cho hợp phong cách */
-            margin-bottom: 1.5rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border: 4px solid white;
         }
-        h1 { color: #333; font-size: 28px; margin-bottom: 0.5rem; }
-        p { color: #666; margin-bottom: 2rem; font-style: italic; }
+
+        h1 { 
+            color: #d63384; 
+            font-size: 32px; 
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        p { 
+            color: #444; 
+            margin-bottom: 2rem; 
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        /* Nút bấm hiệu ứng lân tinh */
         .btn {
             display: inline-block;
-            padding: 15px 40px;
-            background-color: #ff69b4; /* Màu nút đồng bộ với viền ảnh */
+            padding: 18px 45px;
+            background-color: #ff1493;
             color: white;
             text-decoration: none;
-            border-radius: 30px;
+            border-radius: 50px;
             font-weight: bold;
-            font-size: 18px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+            font-size: 20px;
+            transition: all 0.4s;
+            box-shadow: 0 10px 20px rgba(255, 20, 147, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
+
         .btn:hover { 
-            background-color: #e05297;
-            transform: scale(1.05);
+            background-color: #ff69b4;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(255, 20, 147, 0.6);
+        }
+
+        /* Hiệu ứng tim bay nhẹ xung quanh */
+        .heart {
+            position: absolute;
+            color: #ff69b4;
+            font-size: 20px;
+            opacity: 0.6;
+            animation: float 3s ease-in infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 0; }
+            50% { opacity: 0.6; }
+            100% { transform: translateY(-100px); opacity: 0; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="35089261_2105625406389667_3647960224096059392_n.jpg" class="avatar" alt="Cẩm Lan Sục">
+        <div class="avatar-wrapper">
+            <img src="35089261_2105625406389667_3647960224096059392_n.jpg" class="avatar" alt="Cẩm Lan Sục">
+        </div>
         <h1>Cẩm Lan Sục AI</h1>
-        <p>"Chào cưng! Muốn tâm sự mỏng hay tâm sự dày thì bấm vô đây với chị nha."</p>
-        <a href="https://gemini.google.com/gem/1xWN89qoYAqphtLrcxmn4KBCK5Wrmn31w?usp=sharing" target="_blank" class="btn">Kết nối ngay!</a>
+        <p>✨ Chào cưng! Tâm sự với chị ngay và luôn đi nào! ✨</p>
+        <a href="https://gemini.google.com/gem/1xWN89qoYAqphtLrcxmn4KBCK5Wrmn31w?usp=sharing" target="_blank" class="btn">Chat Ngay Cưng Ơi</a>
     </div>
+
+    <div class="heart" style="top: 20%; left: 10%;">❤️</div>
+    <div class="heart" style="top: 70%; left: 15%;">💖</div>
+    <div class="heart" style="top: 30%; right: 15%;">✨</div>
+    <div class="heart" style="top: 80%; right: 10%;">🌸</div>
 </body>
 </html>
