@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Gemini Chatbot</title>
-  <style>
-    html, body {
-      margin: 0;
-      height: 100%;
-    }
-    iframe {
-      width: 100%;
-      height: 100vh;
-      border: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cẩm Lan Sục Chatbot</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #a777e3;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        h1 { margin: 10px 0; font-size: 24px; color: #4a4a4a; }
+        p { color: #777; margin-bottom: 30px; }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: #6e8efb;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(110, 142, 251, 0.4);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(110, 142, 251, 0.6);
+            background: #5a7be3;
+        }
+    </style>
 </head>
 <body>
-  <iframe 
-    src="https://gemini.google.com/gem/1xWN89qoYAqphtLrcxmn4KBCK5Wrmn31w?usp=sharing"
-    allow="clipboard-write; microphone;">
-  </iframe>
+    <div class="card">
+        <img src="https://raw.githubusercontent.com/levinhtrong2605-blue/gemini-chatbot/main/35089261_2105625406389667_3647960224096059392_n.jpg" class="avatar" alt="Cẩm Lan Sục">
+        <h1>Cẩm Lan Sục AI</h1>
+        <p>Chào cưng, muốn tâm sự gì với chị thì bấm nút dưới nha!</p>
+        <a href="https://gemini.google.com/gem/1xWN89qoYAqphtLrcxmn4KBCK5Wrmn31w?usp=sharing" target="_blank" class="btn">Trò chuyện ngay</a>
+    </div>
 </body>
 </html>
