@@ -17,41 +17,47 @@
         .container {
             text-align: center;
             background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            max-width: 400px;
+            padding: 2.5rem;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            max-width: 450px;
             width: 90%;
         }
         .avatar {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #1a73e8;
-            margin-bottom: 1rem;
+            border: 5px solid #ff69b4; /* Đổi sang màu hồng cho hợp phong cách */
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-        h1 { color: #333; font-size: 24px; margin-bottom: 0.5rem; }
-        p { color: #666; margin-bottom: 1.5rem; }
+        h1 { color: #333; font-size: 28px; margin-bottom: 0.5rem; }
+        p { color: #666; margin-bottom: 2rem; font-style: italic; }
         .btn {
             display: inline-block;
-            padding: 12px 30px;
-            background-color: #1a73e8;
+            padding: 15px 40px;
+            background-color: #ff69b4; /* Màu nút đồng bộ với viền ảnh */
             color: white;
             text-decoration: none;
-            border-radius: 25px;
+            border-radius: 30px;
             font-weight: bold;
-            transition: background 0.3s;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
         }
-        .btn:hover { background-color: #1557b0; }
+        .btn:hover { 
+            background-color: #e05297;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUXMsSdwWEMlg6y4z8UMGsC_HyfIq3KfgUVg&s" class="avatar" alt="Cẩm Lan Sục">
+        <img src="35089261_2105625406389667_3647960224096059392_n.jpg" class="avatar" alt="Cẩm Lan Sục">
         <h1>Cẩm Lan Sục AI</h1>
-        <p>Chào cưng! Bấm vào đây để bắt đầu trò chuyện với chị nha.</p>
-        <a href="https://gemini.google.com/gem/1xWN89qoYAqphtLrcxmn4KBCK5Wrmn31w?usp=sharing" target="_blank" class="btn">Bắt đầu Chat</a>
+        <p>"Chào cưng! Muốn tâm sự mỏng hay tâm sự dày thì bấm vô đây với chị nha."</p>
+        <a href="https://gemini.google.com/gem/1xWN89qoYAqphtLrcxmn4KBCK5Wrmn31w?usp=sharing" target="_blank" class="btn">Kết nối ngay!</a>
     </div>
 </body>
 </html>
